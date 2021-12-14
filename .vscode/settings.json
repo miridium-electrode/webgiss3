@@ -1,0 +1,14 @@
+{
+	"sqltools.connections": [
+		{
+			"previewLimit": 50,
+			"server": "localhost",
+			"port": 5400,
+			"driver": "PostgreSQL",
+			"name": "webgis",
+			"database": "webgis",
+			"username": "rickass",
+			"password": "somepass"
+		}
+	]
+}
