@@ -1,8 +1,8 @@
-import fs from "fs";
-import { MeiliSearch } from "meilisearch";
+const fs = require("fs");
+const { MeiliSearch } = require("meilisearch");
 
 (async () => {
-	let rawdata = fs.readFileSync('uni.json');
+	let rawdata = fs.readFileSync('./uni.json');
 	let uni = JSON.parse(rawdata);
 	
 	const client = new MeiliSearch({
