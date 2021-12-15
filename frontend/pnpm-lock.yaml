@@ -4,6 +4,7 @@ specifiers:
   '@rollup/plugin-alias': ^3.1.8
   '@rollup/plugin-commonjs': ^17.0.0
   '@rollup/plugin-node-resolve': ^11.0.0
+  '@types/leaflet': ^1.7.6
   leaflet: ^1.7.1
   rollup: ^2.3.4
   rollup-plugin-css-only: ^3.1.0
@@ -21,6 +22,7 @@ devDependencies:
   '@rollup/plugin-alias': 3.1.8_rollup@2.61.1
   '@rollup/plugin-commonjs': 17.1.0_rollup@2.61.1
   '@rollup/plugin-node-resolve': 11.2.1_rollup@2.61.1
+  '@types/leaflet': 1.7.6
   rollup: 2.61.1
   rollup-plugin-css-only: 3.1.0_rollup@2.61.1
   rollup-plugin-livereload: 2.0.5
@@ -122,6 +124,16 @@ packages:
 
   /@types/estree/0.0.50:
     resolution: {integrity: sha512-C6N5s2ZFtuZRj54k2/zyRhNDjJwwcViAM3Nbm8zjBpbqAdZ00mr0CFxvSKeO8Y/e03WVFLpQMdHYVfUd6SB+Hw==}
+    dev: true
+
+  /@types/geojson/7946.0.8:
+    resolution: {integrity: sha512-1rkryxURpr6aWP7R786/UQOkJ3PcpQiWkAXBmdWc7ryFWqN6a4xfK7BtjXvFBKO9LjQ+MWQSWxYeZX1OApnArA==}
+    dev: true
+
+  /@types/leaflet/1.7.6:
+    resolution: {integrity: sha512-Emkz3V08QnlelSbpT46OEAx+TBZYTOX2r1yM7W+hWg5+djHtQ1GbEXBDRLaqQDOYcDI51Ss0ayoqoKD4CtLUDA==}
+    dependencies:
+      '@types/geojson': 7946.0.8
     dev: true
 
   /@types/node/16.11.13:

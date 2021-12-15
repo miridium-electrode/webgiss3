@@ -1,30 +1,38 @@
 <script>
-	export let name;
+	import * as L from 'leaflet';
+	import 'leaflet-css'
+	let m;
+
+	function createMap(container) {
+		let map = L.map(container).setView([51.505, -0.09], 13);
+	
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+	
+		L.marker([51.5, -0.09]).addTo(map)
+			.bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+			.openPopup();
+		
+			return map;
+	}
+
+	function leaflet(container) {
+		m = createMap(container);
+
+		return {
+			destroy: () => {
+				m.remove();
+			},
+		};
+	}
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	#map {
+		width: 100vw;
+		height: 100vh;
 	}
 </style>
+
+<div id="map" use:leaflet></div>
