@@ -4,6 +4,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
+import alias from "@rollup/plugin-alias";
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -42,6 +43,12 @@ export default {
 				// enable run-time checks when not in production
 				dev: !production
 			}
+		}),
+
+		alias({
+			entries: [
+				{find: 'leaflet-css', replacement: 'leaflet/dist/leaflet.css'}
+			]
 		}),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
