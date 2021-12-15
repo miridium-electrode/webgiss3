@@ -20,6 +20,9 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "@meilisearch/instant-meilisearch": "^0.5.10",
+    "algoliasearch": "^4.11.0",
+    "instantsearch.js": "^4.35.0",
     "leaflet": "^1.7.1",
     "sirv-cli": "^1.0.0"
   }
