@@ -1,3 +1,6 @@
+# dependency
+docker
+
 # kalau pertama kali buka repo (linux/wsl2)
 
 1. cd backend
