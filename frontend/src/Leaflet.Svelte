@@ -35,5 +35,4 @@
 	}
 </style>
 
-inp
 <div id="map" use:leaflet></div>

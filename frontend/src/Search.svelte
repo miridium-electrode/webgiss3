@@ -1,6 +1,7 @@
 <script>
 	import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
-	import instantsearch from "instantsearch.js";
+	const instantsearch = require('instantsearch.js').default;
+	import { searchBox, hits } from 'instantsearch.js/es/widgets';
 
 	function search(node) {
 		const isearch = instantsearch({
@@ -9,11 +10,11 @@
 		});
 
 		isearch.addWidgets([
-			instantsearch.widgets.searchBox({
+			searchBox({
 				container: node
 			})
-		]);
+		])
 	}
 </script>
 
-<div use:search></div>
+<input use:search>
