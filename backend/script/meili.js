@@ -1,8 +1,9 @@
 const fs = require("fs");
 const { MeiliSearch } = require("meilisearch");
+const path = require('path');
 
 (async () => {
-	let rawdata = fs.readFileSync('./uni.json');
+	let rawdata = fs.readFileSync(path.join(__dirname, './unigeo.json'));
 	let uni = JSON.parse(rawdata);
 	
 	const client = new MeiliSearch({

@@ -3,7 +3,5 @@ services:
     image: getmeili/meilisearch
     environment:
       - MEILI_MASTER_KEY=masterk
-    volumes:
-      - ./meilidata/Universitas.csv:/geodata/Universitas.csv
     ports:
       - 7700:7700

@@ -1,0 +1,200 @@
+[
+	{
+		"id": 1,
+		"name": "Universitas Negeri Surabaya",
+		"address": "Jl. Lidah Wetan, Lidah Wetan, Kec. Lakarsantri, Kota SBY, Jawa Timur 602",
+		"_geo": {
+			"lat": -7.29835157152597,
+			"lng": 112.672295092615
+		}
+	},
+	{
+		"id": 2,
+		"name": "Institude Teknologi Sepuluh Nopember",
+		"address": "Jl. Teknik Kimia; Keputih; Kec. Sukolilo; Kota SBY; Jawa Timur 60111",
+		"_geo": {
+			"lat": -7.28259013036199,
+			"lng": 112.795440284089
+		}
+	},
+	{
+		"id": 3,
+		"name": "Universitas Airlangga Kampus A",
+		"address": "Kampus A UNAIR; Jl. Mayjen Prof. Dr. Moestopo No.47; Pacar Kembang; Kec. Tambaksari; Kota SBY; Jawa Timur 60132",
+		"_geo": {
+			"lat": -7.26497039541604,
+			"lng": 112.759172129934
+		}
+	},
+	{
+		"id": 4,
+		"name": "Universitas Airlangga Kampus B",
+		"address": "Jl. Airlangga No.4 - 6; Airlangga; Kec. Gubeng; Kota SBY; Jawa Timur 60114",
+		"_geo": {
+			"lat": -7.27187434398458,
+			"lng": 112.759167437595
+		}
+	},
+	{
+		"id": 5,
+		"name": "Universitas Airlangga Kampus C",
+		"address": "Jl. Dr. Ir. H. Soekarno; Mulyorejo; Kec. Mulyorejo; Kota SBY; Jawa Timur 60115",
+		"_geo": {
+			"lat": -7.2684043849604,
+			"lng": 112.784444337595
+		}
+	},
+	{
+		"id": 6,
+		"name": "Universitas Muhammadiyah Surabaya",
+		"address": "Jl. Raya Sutorejo No.59; Dukuh Sutorejo; Kec. Mulyorejo; Kota SBY; Jawa Timur 60113",
+		"_geo": {
+			"lat": -7.25841200376559,
+			"lng": 112.788945884659
+		}
+	},
+	{
+		"id": 7,
+		"name": "Universitas Pembangunan Nasional (Veteran) Jawa Timur",
+		"address": "Jl. Rungkut Madya No.1; Gn. Anyar; Kec. Gn. Anyar; Kota SBY; Jawa Timur 60294",
+		"_geo": {
+			"lat": -7.33093390996453,
+			"lng": 112.788544684659
+		}
+	},
+	{
+		"id": 8,
+		"name": "Universitas Surabaya",
+		"address": "Jl. Raya Rungkut; Kali Rungkut; Kec. Rungkut; Kota SBY; Jawa Timur 60293",
+		"_geo": {
+			"lat": -7.31901343563891,
+			"lng": 112.771630957942
+		}
+	},
+	{
+		"id": 9,
+		"name": "Universitas Islam Negeri Sunan Ampel Surabaya",
+		"address": "Jl. Ahmad Yani No.117; Jemur Wonosari; Kec. Wonocolo; Kota SBY; Jawa Timur 60237",
+		"_geo": {
+			"lat": -7.31945682879745,
+			"lng": 112.734594422726
+		}
+	},
+	{
+		"id": 10,
+		"name": "Universitas Kristen Petra",
+		"address": "l. Siwalankerto No.121-131; Siwalankerto; Kec. Wonocolo; Kota SBY; Jawa Timur 60236",
+		"_geo": {
+			"lat": -7.33745029108393,
+			"lng": 112.737821392045
+		}
+	},
+	{
+		"id": 11,
+		"name": "Universitas Katolik Widya Mandala Surabaya",
+		"address": "Jl. Kalisari Selatan No.1 Kalisari; Pakuwon City; Kec. Mulyorejo; Kota SBY; Jawa Timur 60112",
+		"_geo": {
+			"lat": -7.26782787059935,
+			"lng": 112.812052707385
+		}
+	},
+	{
+		"id": 12,
+		"name": "Politeknik Elektronika Negeri Surabaya",
+		"address": "Sepuluh Nopember Institute of Technology (ITS); Kampus; Jl. Raya ITS; Keputih; Kec. Sukolilo; Kota SBY; Jawa Timur 60111",
+		"_geo": {
+			"lat": -7.27314391047709,
+			"lng": 112.793541123296
+		}
+	},
+	{
+		"id": 13,
+		"name": "Universitas Ciputra Surabaya",
+		"address": "CitraLand CBD Boulevard; Made; Kec. Sambikerep; Kota SBY; Jawa Timur 60219",
+		"_geo": {
+			"lat": -7.28313948380949,
+			"lng": 112.631344107955
+		}
+	},
+	{
+		"id": 14,
+		"name": "Universitas Wijaya Kusuma Surabaya",
+		"address": "Jl. Dukuh Kupang XXV No.54; Dukuh Kupang; Kec. Dukuhpakis; Kota SBY; Jawa Timur 60225",
+		"_geo": {
+			"lat": -7.27979395802658,
+			"lng": 112.711758161363
+		}
+	},
+	{
+		"id": 15,
+		"name": "Politeknik Perkapalan Negeri Surabaya",
+		"address": "ITS Sukolilo; Jl. Teknik Kimia; Keputih; Kec. Sukolilo; Kota SBY; Jawa Timur 60111",
+		"_geo": {
+			"lat": -7.27684697918184,
+			"lng": 112.798290759082
+		}
+	},
+	{
+		"id": 16,
+		"name": "Institut Teknologi Telkom Surabaya",
+		"address": "Jl. Ketintang No.156; Ketintang; Kec. Gayungan; Kota SBY; Jawa Timur 60231",
+		"_geo": {
+			"lat": -7.31064898651884,
+			"lng": 112.732703965327
+		}
+	},
+	{
+		"id": 17,
+		"name": "Universitas Wijaya Putra - Kampus Benowo",
+		"address": "Jl. Pd. Benowo Indah No.1-3; Babat Jerawat; Kec. Pakal; Kota SBY; Jawa Timur 60197",
+		"_geo": {
+			"lat": -7.24338755803204,
+			"lng": 112.634330159652
+		}
+	},
+	{
+		"id": 18,
+		"name": "Universitas W.R. Supratman",
+		"address": "Jl. Arief Rahman Hakim No.14; Keputih; Kec. Sukolilo; Kota SBY; Jawa Timur 60111",
+		"_geo": {
+			"lat": -7.28992379470421,
+			"lng": 112.787106689193
+		}
+	},
+	{
+		"id": 19,
+		"name": "Universitas Yos Soedarso",
+		"address": "Jl. Raya Dukuh Kupang Barat No.1/216-218; Dukuh Kupang; Kec. Dukuhpakis; Kota SBY; Jawa Timur 60225",
+		"_geo": {
+			"lat": -7.28468104404561,
+			"lng": 112.710962698289
+		}
+	},
+	{
+		"id": 20,
+		"name": "STIKES Katolik St.Vincentius A Paulo Surabaya",
+		"address": "Jl. Jambi No.12 - 18; Darmo; Kec. Wonokromo; Kota SBY; Jawa Timur 60241",
+		"_geo": {
+			"lat": -7.29267913425932,
+			"lng": 112.737036851697
+		}
+	},
+	{
+		"id": 21,
+		"name": "Universitas 17 Agustus 1945 Surabaya",
+		"address": "Jl. Semolowaru No.45; Menur Pumpungan; Kec. Sukolilo; Kota SBY; Jawa Timur 60118",
+		"_geo": {
+			"lat": -7.2981944521165,
+			"lng": 112.766753524956
+		}
+	},
+	{
+		"id": 22,
+		"name": "Politeknik Kesehatan Kemenkes Surabaya",
+		"address": "Jl. Pucang Jajar Tengah No.56; Kertajaya; Kec. Gubeng; Kota SBY; Jawa Timur 60282",
+		"_geo": {
+			"lat": -7.28300792258998,
+			"lng": 112.761517819219
+		}
+	}
+]
