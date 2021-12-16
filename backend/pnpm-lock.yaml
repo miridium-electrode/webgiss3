@@ -11,12 +11,14 @@ specifiers:
   pg: ^8.7.1
   ts-node: ^10.4.0
   typescript: ^4.5.2
+  zustand: ^3.6.7
 
 dependencies:
   cors: 2.8.5
   express: 4.17.1
   meilisearch: 0.23.0
   pg: 8.7.1
+  zustand: 3.6.7
 
 devDependencies:
   '@types/express': 4.17.13
@@ -1413,3 +1415,13 @@ packages:
     resolution: {integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==}
     engines: {node: '>=6'}
     dev: true
+
+  /zustand/3.6.7:
+    resolution: {integrity: sha512-bYWKXMfoJwZyliFgidcQ3tJC/F2f2hHq1+lhTk8dVPX2k28i4VnpnKjBGNxAd2QNliV0m455Vm+gDL8LShrV3g==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      react: '>=16.8'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dev: false
