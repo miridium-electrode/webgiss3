@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.ts",
-    "build": "tsc --project ./"
+    "build": "tsc --project ./",
+    "meili:init": "node script/meili.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "meilisearch": "^0.23.0",
     "pg": "^8.7.1",

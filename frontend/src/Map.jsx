@@ -1,18 +1,38 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { useUniData } from "./unidata";
+import { QueryClientProvider, QueryClient } from "react-query";
 import 'leaflet/dist/leaflet.css'
+
+const qc = new QueryClient();
 
 export default function Map() {
 	return (
-		<MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false} style={{height: '100vh'}}>
+		<QueryClientProvider client={qc}>
+			<MapImage/>
+		</QueryClientProvider>
+	)
+}
+
+function MapImage() {
+	const [data, isLoading] = useUniData();
+
+	if(isLoading) {
+		return "Loading...";
+	}
+
+	return (
+		<MapContainer center={[data[0].latitude, data[0].longitude]} zoom={13} scrollWheelZoom={false} style={{height:'50vh', flexGrow: 1}}>
 			<TileLayer
 				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 			/>
-			<Marker position={[51.505, -0.09]}>
-				<Popup>
-					A pretty CSS3 popup. <br /> Easily customizable.
-				</Popup>
-			</Marker>
+			{data.map((val) => (
+				<Marker position={[val.latitude, val.longitude]} key={val.id}>
+						<Popup>
+							{val.name}
+						</Popup>
+				</Marker>
+			))}
 		</MapContainer>
 	);
 }

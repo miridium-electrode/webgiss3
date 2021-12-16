@@ -1,5 +1,10 @@
 **/node_modules/*
 **/*.env
 frontend/public/build/
+frontend/dist
+frontend/dist-ssr
+frontend/*.local
+
 
 frontend/.DS_Store
+frontend/env.js

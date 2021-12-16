@@ -1,7 +1,17 @@
 services:
+  db:
+    image: postgres:11
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - "./geodata/Universitas.csv:/geodata/Universitas.csv"
+      - "./sql:/docker-entrypoint-initdb.d"
+    ports:
+      - 5400:5432
   meilisearch:
     image: getmeili/meilisearch
-    environment:
-      - MEILI_MASTER_KEY=masterk
+    env_file:
+      - .env
     ports:
       - 7700:7700
