@@ -1,4 +1,5 @@
 import { useQuery } from "react-query";
+import create from 'zustand';
 import env from '../env'
 
 async function getUni() {
@@ -22,7 +23,27 @@ function useUniData() {
 		console.log(error)
 	}
 
-	return [data, isLoading];
+	const dataWithCheck = data && data.map(val => ({...val, checked: true}));
+
+	return {data: dataWithCheck, isLoading};
 }
 
-export { useUniData };
+const useSideState = create((set, get) => ({
+	uniListSide: [],
+	initUniListSide: () => {
+		const {data, isLoading} = useUniData();
+		if(isLoading) {
+			console.log("wait");
+		}
+
+		set({uniListSide: data})
+	},
+	changeChecked: (id) => {
+		let foo = get().uniListSide;
+		let res = foo.map(f => f.id === id ? {...f, checked: false} : f);
+
+		set({uniListSide: res})
+	}
+}))
+
+export { useSideState, useUniData };

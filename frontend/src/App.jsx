@@ -1,6 +1,7 @@
 import Map from './Map';
 import Search from './Search';
 import Sidebar from './Sidebar';
+import Test from "./Test";
 
 const App = () => {
 	const style = {
@@ -12,8 +13,7 @@ const App = () => {
 	
 	return (
 		<div style={style}>
-			<Search/>
-			<Map/>
+			<Test/>
 		</div>
 	)
 };

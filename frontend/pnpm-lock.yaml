@@ -14,6 +14,7 @@ specifiers:
   serve: ^13.0.2
   tailwindcss: ^3.0.5
   vite: ^2.7.2
+  zustand: ^3.6.7
 
 dependencies:
   '@meilisearch/instant-meilisearch': 0.5.10
@@ -24,6 +25,7 @@ dependencies:
   react-leaflet: 3.2.2_91fa1427a3331e02931dfea77720a290
   react-query: 3.34.4_react-dom@17.0.2+react@17.0.2
   serve: 13.0.2
+  zustand: 3.6.7_react@17.0.2
 
 devDependencies:
   '@vitejs/plugin-react': 1.1.3
@@ -1949,3 +1951,15 @@ packages:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
     dev: true
+
+  /zustand/3.6.7_react@17.0.2:
+    resolution: {integrity: sha512-bYWKXMfoJwZyliFgidcQ3tJC/F2f2hHq1+lhTk8dVPX2k28i4VnpnKjBGNxAd2QNliV0m455Vm+gDL8LShrV3g==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      react: '>=16.8'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      react: 17.0.2
+    dev: false

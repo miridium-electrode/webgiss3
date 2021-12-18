@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { useUniData } from "./unidata";
+import { useUniData, useSideState } from "./unidata";
 import { QueryClientProvider, QueryClient } from "react-query";
 import 'leaflet/dist/leaflet.css'
 
@@ -14,7 +14,7 @@ export default function Map() {
 }
 
 function MapImage() {
-	const [data, isLoading] = useUniData();
+	const {data, isLoading} = useUniData();
 
 	if(isLoading) {
 		return "Loading...";

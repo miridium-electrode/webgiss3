@@ -1,4 +1,4 @@
-import { useUniData } from './unidata';
+import { useSideState } from './unidata';
 import { QueryClientProvider, QueryClient } from "react-query";
 import './tailwind.css';
 
@@ -14,11 +14,9 @@ export default function Sidebar() {
 
 
 function SideContent() {
-	const [data, isLoading] = useUniData();
-	
-	if(isLoading) {
-		return "Loading..."
-	}
+	const data = useSideState(state => state.uniListSide);
+
+	console.log(data);
 
 	return (
 		<div className='h-screen w-2/5 grow-0'>
