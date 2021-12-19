@@ -15,33 +15,10 @@ async function getUni() {
 	}
 }
 
-const useUniData = create((set, get) => ({
+const useUniData = create((set) => ({
 	unidata: [],
 	setUniData(d) {
 		set({unidata: d});
-	},
-	updateCheck(id) {
-		// let unidataTempMulti = get().unidata;
-		// let idx = unidataTempMulti.findIndex(el => el.id === id);
-		// let unidataTemp = {...unidataTempMulti[idx]};
-		// unidataTemp.checked = !unidataTemp.checked; 
-		// unidataTempMulti[idx] = unidataTemp;
-		// console.log(unidataTempMulti);
-
-		// set({unidata: unidataTempMulti});
-
-		set(state => ({
-			unidata: (() => {
-				let unidataTempMulti = state.unidata;
-				let idx = unidataTempMulti.findIndex(el => el.id === id);
-				let unidataTemp = {...unidataTempMulti[idx]};
-				unidataTemp.checked = !unidataTemp.checked; 
-				unidataTempMulti[idx] = unidataTemp;
-				console.log(unidataTempMulti);
-
-				return unidataTempMulti;
-			})()
-		}))
 	}
 }))
 

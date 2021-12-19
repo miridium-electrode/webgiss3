@@ -1,21 +1,16 @@
 import { useUniData } from './unidata';
-import { QueryClientProvider, QueryClient } from "react-query";
-import shallow from 'zustand/shallow';
 import './tailwind.css';
-
-const qc = new QueryClient()
+import { isEqual } from 'lodash';
 
 export default function Sidebar() {
 	return (
-		<QueryClientProvider client={qc}>
-			<SideContent/>
-		</QueryClientProvider>
+		<SideContent/>
 	);
 }
 
 
 function SideContent() {
-	const data = useUniData(state => state.unidata, shallow);
+	const data = useUniData(state => state.unidata, (oldData, newData) => isEqual(oldData, newData));
 	const updateCheck = useUniData(state => state.updateCheck);
 
 	return (
@@ -23,17 +18,14 @@ function SideContent() {
 			<h1 className='text-2xl'>Universitas</h1>
 			<ul>
 				{data.map(val => (
-					// <li key={i}>{val.name}</li>
-					<div key={val.id} >
+					<div key={val.id}>
 						<input 
-						type={"checkbox"}
-						key={val.id}
-						value={val.id}
-						defaultChecked={val.checked} 
+						type="checkbox"
+						defaultChecked={val.checked}
 						onChange={() => updateCheck(val.id)}
 						/>
 						{" "}
-						<label>{val.name}</label>
+						{val.name}
 						<br/>
 					</div>
 				))}
