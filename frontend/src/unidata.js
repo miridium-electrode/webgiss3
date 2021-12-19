@@ -1,4 +1,3 @@
-import { useQuery } from "react-query";
 import create from 'zustand';
 import env from '../env'
 
@@ -16,34 +15,34 @@ async function getUni() {
 	}
 }
 
-function useUniData() {
-	const {data, error, isError, isLoading } = useQuery('uni-pg', getUni);
-
-	if(isError) {
-		console.log(error)
-	}
-
-	const dataWithCheck = data && data.map(val => ({...val, checked: true}));
-
-	return {data: dataWithCheck, isLoading};
-}
-
-const useSideState = create((set, get) => ({
-	uniListSide: [],
-	initUniListSide: () => {
-		const {data, isLoading} = useUniData();
-		if(isLoading) {
-			console.log("wait");
-		}
-
-		set({uniListSide: data})
+const useUniData = create((set, get) => ({
+	unidata: [],
+	setUniData(d) {
+		set({unidata: d});
 	},
-	changeChecked: (id) => {
-		let foo = get().uniListSide;
-		let res = foo.map(f => f.id === id ? {...f, checked: false} : f);
+	updateCheck(id) {
+		// let unidataTempMulti = get().unidata;
+		// let idx = unidataTempMulti.findIndex(el => el.id === id);
+		// let unidataTemp = {...unidataTempMulti[idx]};
+		// unidataTemp.checked = !unidataTemp.checked; 
+		// unidataTempMulti[idx] = unidataTemp;
+		// console.log(unidataTempMulti);
 
-		set({uniListSide: res})
+		// set({unidata: unidataTempMulti});
+
+		set(state => ({
+			unidata: (() => {
+				let unidataTempMulti = state.unidata;
+				let idx = unidataTempMulti.findIndex(el => el.id === id);
+				let unidataTemp = {...unidataTempMulti[idx]};
+				unidataTemp.checked = !unidataTemp.checked; 
+				unidataTempMulti[idx] = unidataTemp;
+				console.log(unidataTempMulti);
+
+				return unidataTempMulti;
+			})()
+		}))
 	}
 }))
 
-export { useSideState, useUniData };
+export { getUni, useUniData };
