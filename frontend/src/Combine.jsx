@@ -49,7 +49,7 @@ const Combine = () => {
 
 	return (
 		<div style={style}>
-			<MapContainer center={[-7.29835157152597, 112.672295092615]} zoom={12} scrollWheelZoom={false} style={{height:'100vh', flexGrow: 1}}>
+			<MapContainer center={[-7.29835157152597, 112.672295092615]} zoom={12} scrollWheelZoom={true} style={{height:'100vh', flexGrow: 1}}>
 				<TileLayer
 					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
